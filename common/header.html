@@ -1,7 +1,8 @@
 <!--<script type="text/jsx" version="0.8">-->
 <script type="text/discourse-plugin" version="0.8">
+  import RawHtml from "discourse/widgets/raw-html";
+
   const { h } = require('virtual-dom');
-  const { rawHTML } = require('discourse/widgets/raw-html');
   const { applyDecorators } = require('discourse/widgets/widget');
 
   const flatten = array => [].concat.apply([], array);
@@ -66,7 +67,7 @@
           const values = l.split(",");
           return this.attach('link', {
               icon: values[0].trim(),
-              rawLabel: rawHTML({ html: `<span>${values[1].trim()}</span>` }),
+              rawLabel: new RawHtml({ html: `<span>${values[1].trim()}</span>` }),
               href: values[2].trim(),
               omitSpan: true,
               attributes: {
