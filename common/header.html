@@ -66,10 +66,9 @@
           const values = l.split(",");
           return this.attach('link', {
               icon: values[0].trim(),
-              title: '<span>' + values[1].trim() + '</span>',
-              // rawLabel: '<span>' + values[1].trim() + '</span>',
+              rawLabel: values[1].trim(),
               href: values[2].trim(),
-              omitSpan: true,
+              omitSpan: false,
               attributes: {
                 target: (values[3] || '').trim()
               }
