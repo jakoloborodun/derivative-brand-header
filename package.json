@@ -1,7 +1,7 @@
 {
-  "name": "discourse-brand-header",
+  "name": "derivative-brand-header",
   "version": "1.0.0",
-  "repository": "https://github.com/discourse/discourse-brand-header",
+  "repository": "https://github.com/jakoloborodun/derivative-brand-header",
   "author": "Discourse",
   "license": "MIT",
   "devDependencies": {
