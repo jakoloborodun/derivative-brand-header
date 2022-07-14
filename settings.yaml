@@ -15,7 +15,7 @@ icons:
   type: list
   list_type: simple
   default: ""
-  description: "Format: icon-name,url,target (optional)"
+  description: "Format: icon-name,link-label,url,target (optional)"
 custom_font_awesome_icons:
   type: list
   list_type: simple
