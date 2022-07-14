@@ -99,6 +99,7 @@
 
   const { wantsNewWindow } = require('discourse/lib/intercept-click');
   const DiscourseURL = require('discourse/lib/url').default;
+  const { iconNode } = require("discourse-common/lib/icon-library");
 
   api.createWidget('brand-logo', {
     tagName: 'div.title',
@@ -117,8 +118,17 @@
       } else if (logoUrl.length) {
         return h('img#brand-logo.logo-big', { key: 'logo-big', attributes: { src: logoUrl, alt: title } });
       } else {
-        return h('h2#brand-text-logo.text-logo', { key: 'logo-text' }, title);
+        return h('span#brand-text-logo.text-logo', { key: 'logo-text' }, this.returnArrow(title));
       }
+    },
+
+    returnArrow(title) {
+      const content = [];
+
+      content.push(iconNode('heart'));
+      content.push(h('span', { key: 'text-logo-wrapper' }, title));
+
+      return content;
     },
 
     html() {
