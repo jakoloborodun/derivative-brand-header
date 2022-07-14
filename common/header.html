@@ -1,5 +1,5 @@
-<!--<script type="text/jsx" version="0.8">-->
-<script type="text/discourse-plugin" version="0.8">
+<script type="text/jsx" version="0.8">
+// <script type="text/discourse-plugin" version="0.8">
   const { h } = require('virtual-dom');
   const { applyDecorators } = require('discourse/widgets/widget');
 
@@ -125,8 +125,8 @@
     returnArrow(title) {
       const content = [];
 
-      content.push(iconNode('heart'));
-      content.push(h('span', { key: 'text-logo-wrapper' }, title));
+      content.push(iconNode('chevron-left'));
+      content.push(h('span.text-logo-inner', { key: 'text-logo-inner' }, title));
 
       return content;
     },

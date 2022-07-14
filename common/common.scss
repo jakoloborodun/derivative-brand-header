@@ -10,6 +10,9 @@
   #brand-text-logo {
     line-height: 32px;
     margin: 0;
+    .text-logo-inner {
+      padding-left: 8px;
+    }
   }
 
   nav.links {
