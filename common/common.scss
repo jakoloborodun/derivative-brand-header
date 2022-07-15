@@ -74,6 +74,8 @@
     a,
     .d-icon {
       color: var(--header-primary);
+    }
+    .widget-link {
       transition: all linear .15s;
       &:hover {
         color: var(--primary-medium);
