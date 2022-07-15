@@ -43,10 +43,10 @@
     margin-right: 24px;
     padding: 0;
     a {
-      color: var(--secondary);
+      color: var(--header_primary);
     }
     &:visited {
-      color: var(--secondary);
+      color: var(--header_primary);
     }
     .rtl & {
       float: right;
