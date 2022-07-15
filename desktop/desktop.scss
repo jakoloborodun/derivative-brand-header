@@ -8,10 +8,10 @@
     float: left;
     margin-right: 24px;
     a {
-      color: var(--header-primary);
+      color: var(--header_primary);
     }
     &:visited {
-      color: var(--header-primary);
+      color: var(--header_primary);
     }
     .rtl & {
       float: right;
