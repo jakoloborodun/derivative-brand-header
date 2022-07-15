@@ -1,6 +1,6 @@
 .b-header {
   width: 100%;
-  background-color: var(--primary-medium);
+  background-color: var(--brand-header-background);
   height: 48px;
   margin-bottom: 0;
 
@@ -8,10 +8,10 @@
     float: left;
     margin-right: 24px;
     a {
-      color: var(--secondary);
+      color: var(--brand-header-primary);
     }
     &:visited {
-      color: var(--secondary);
+      color: var(--brand-header-primary);
     }
     .rtl & {
       float: right;
