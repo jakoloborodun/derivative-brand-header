@@ -73,7 +73,11 @@
     float: right;
     a,
     .d-icon {
-      color: var(--secondary);
+      color: var(--header-primary);
+      transition: all linear .15s;
+      &:hover {
+        color: var(--primary-medium);
+      }
     }
     .rtl & {
       float: left;
